@@ -1,0 +1,13 @@
+.flexbox-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexbox-item {
+  flex: 1 1 auto;
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
