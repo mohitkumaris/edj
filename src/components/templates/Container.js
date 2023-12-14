@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
+import LeftPanel from "../UI/molecules/LeftPanel";
 
 const Container = () => {
+  const [text, setText] = useState("");
+  const handleChange = (e) => {
+    setText(e.target.value);
+  };
   return (
-    <div className="flexbox-container">
-      <div className="flexbox-item">Item 1</div>
-      <div className="flexbox-item">Item 2</div>
-      <div className="flexbox-item">Item 3</div>
+    <div>
+      <body>
+        <header class="page-header">
+          <h1>Header</h1>
+        </header>
+
+        <main class="page-content">
+          <LeftPanel
+            type="text"
+            theme=""
+            value={text}
+            onChange={handleChange}
+          />
+          <article class="content-article">
+            <h1>Main Content</h1>
+          </article>
+        </main>
+
+        <footer class="page-footer">
+          <h1>Footer</h1>
+        </footer>
+      </body>
     </div>
   );
 };

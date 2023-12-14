@@ -1,0 +1,8 @@
+nav {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 1em;
+  text-align: center;
+  background-color: #9bc850;
+  height: 100vh;
+}
