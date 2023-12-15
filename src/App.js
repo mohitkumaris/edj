@@ -2,11 +2,7 @@ import React from "react";
 import Container from "./components/templates/Container";
 
 const App = () => {
-  return (
-    <div>
-      <Container />
-    </div>
-  );
+  return <Container data-testid="container" />;
 };
 
 export default App;

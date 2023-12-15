@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import App from "./App";
+import Container from "./Container";
 
-test("renders Container", () => {
-  render(<App />);
+test("renders header in container", () => {
+  render(<Container />);
   const headers = screen.getAllByRole("heading");
   expect(headers).toHaveLength(4);
 });
